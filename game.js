@@ -75,6 +75,17 @@ const game = async () => {
 
   const guessHistory = [];
 
+  if (totalScore === 0 && gamesPlayed === 0) {
+    alert(
+      "Mwahahaha! I want to play a game, Human... 😈\n\n" +
+        "THE RULES:\n" +
+        "1. I have chosen a number between 1 and 100.\n" +
+        "2. You have 10 attempts to find it or face the consequences.\n" +
+        "3. Every guess is recorded... there is no hiding.\n\n" +
+        "The clock is ticking. Let us begin. ⏳",
+    );
+  }
+
   while (attempts < SETTINGS.MAX_ATTEMPTS && !correct) {
     const guessNumber = getPlayerGuess(attempts);
 
