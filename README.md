@@ -36,6 +36,5 @@ Prepare for judgment.
 📁 File Structure
 index.html: The entry point and game UI.
 
-script.js: The core engine containing the async game loop and scoring logic.
+game.js: The core engine containing the async game loop and scoring logic.
 
-style.css: Minimalist styling to focus the user on the console experience.
