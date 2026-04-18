@@ -66,13 +66,6 @@ const game = async () => {
   let currentGameScore = 0;
   const randomNumber = generateRandomNumber();
 
-  // --- TESTING UTILITY ---
-  // This log is intentionally left for Branko to facilitate easier grading.
-  // It allows for rapid testing of the scoring tiers and win-state logic
-  // without requiring a full 10-attempt play-through.
-
-  console.log(`[GRADED DEBUG] Secret Number: ${randomNumber}`);
-
   const guessHistory = [];
 
   if (totalScore === 0 && gamesPlayed === 0) {
@@ -81,7 +74,8 @@ const game = async () => {
         "THE RULES:\n" +
         "1. I have chosen a number between 1 and 100.\n" +
         "2. You have 10 attempts to find it or face the consequences.\n" +
-        "3. Every guess is recorded... there is no hiding.\n\n" +
+        "3. Every guess is recorded... there is no hiding.\n" +
+        "4. Peer into the shadows (Developer Console - F12)\n\n" +
         "The clock is ticking. Let us begin. ⏳",
     );
   }
